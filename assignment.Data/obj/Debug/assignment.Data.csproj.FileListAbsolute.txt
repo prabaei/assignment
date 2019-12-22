@@ -1,0 +1,15 @@
+c:\users\administrator\documents\visual studio 2015\Projects\assignment\assignment.Data\bin\Debug\assignment.Data.dll.config
+c:\users\administrator\documents\visual studio 2015\Projects\assignment\assignment.Data\bin\Debug\assignment.Data.dll
+c:\users\administrator\documents\visual studio 2015\Projects\assignment\assignment.Data\bin\Debug\assignment.Data.pdb
+c:\users\administrator\documents\visual studio 2015\Projects\assignment\assignment.Data\bin\Debug\assignment.Model.dll
+c:\users\administrator\documents\visual studio 2015\Projects\assignment\assignment.Data\bin\Debug\EntityFramework.dll
+c:\users\administrator\documents\visual studio 2015\Projects\assignment\assignment.Data\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\administrator\documents\visual studio 2015\Projects\assignment\assignment.Data\bin\Debug\assignment.Model.pdb
+c:\users\administrator\documents\visual studio 2015\Projects\assignment\assignment.Data\bin\Debug\EntityFramework.xml
+c:\users\administrator\documents\visual studio 2015\Projects\assignment\assignment.Data\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\administrator\documents\visual studio 2015\Projects\assignment\assignment.Data\obj\Debug\assignment.Data.csprojResolveAssemblyReference.cache
+c:\users\administrator\documents\visual studio 2015\Projects\assignment\assignment.Data\obj\Debug\assignment.Data.dll
+c:\users\administrator\documents\visual studio 2015\Projects\assignment\assignment.Data\obj\Debug\assignment.Data.pdb
+c:\users\administrator\documents\visual studio 2015\Projects\assignment\assignment.Data\bin\Debug\Autofac.dll
+c:\users\administrator\documents\visual studio 2015\Projects\assignment\assignment.Data\bin\Debug\Autofac.pdb
+c:\users\administrator\documents\visual studio 2015\Projects\assignment\assignment.Data\bin\Debug\Autofac.xml

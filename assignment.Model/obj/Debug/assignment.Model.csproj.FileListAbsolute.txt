@@ -1,0 +1,10 @@
+c:\users\administrator\documents\visual studio 2015\Projects\assignment\assignment.Model\bin\Debug\assignment.Model.dll.config
+c:\users\administrator\documents\visual studio 2015\Projects\assignment\assignment.Model\bin\Debug\assignment.Model.dll
+c:\users\administrator\documents\visual studio 2015\Projects\assignment\assignment.Model\bin\Debug\assignment.Model.pdb
+c:\users\administrator\documents\visual studio 2015\Projects\assignment\assignment.Model\bin\Debug\EntityFramework.dll
+c:\users\administrator\documents\visual studio 2015\Projects\assignment\assignment.Model\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\administrator\documents\visual studio 2015\Projects\assignment\assignment.Model\bin\Debug\EntityFramework.xml
+c:\users\administrator\documents\visual studio 2015\Projects\assignment\assignment.Model\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\administrator\documents\visual studio 2015\Projects\assignment\assignment.Model\obj\Debug\assignment.Model.csprojResolveAssemblyReference.cache
+c:\users\administrator\documents\visual studio 2015\Projects\assignment\assignment.Model\obj\Debug\assignment.Model.dll
+c:\users\administrator\documents\visual studio 2015\Projects\assignment\assignment.Model\obj\Debug\assignment.Model.pdb
