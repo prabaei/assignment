@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace assignment.Model.core.common
 {
-    public interface IEmployeeMasterCURD:IcommonCRUD<api.Iemployeemaster>,IgetintKey<api.Iemployeemaster>,IdeleteintKey
-       // ,core.database.IdbCore
+    public interface IresponseContext
     {
-
+        IResponseContextObject getResponseContext();
     }
 }

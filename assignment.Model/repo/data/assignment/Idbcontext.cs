@@ -20,9 +20,15 @@ namespace assignment.Model.repo.data.assignment
         Task<Int32> SaveChangesAsync(CancellationToken cancellationToken);
         DbSet Set(Type entityType);
         DbSet<TEntity> Set<TEntity>() where TEntity : class;
+       
+        Database Database { get; }
+
+
+
+
          DbSet<tblEmployeeMaster> tblEmployeeMasters { get; set; }
+         DbSet<tblempRole> tblempRoles { get; set; }
          DbSet<tblProject> tblProjects { get; set; }
          DbSet<tblProjectStaff> tblProjectStaffs { get; set; }
-        Database Database { get; }
     }
 }

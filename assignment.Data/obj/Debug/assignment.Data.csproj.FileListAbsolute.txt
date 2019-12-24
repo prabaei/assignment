@@ -13,3 +13,20 @@ c:\users\administrator\documents\visual studio 2015\Projects\assignment\assignme
 c:\users\administrator\documents\visual studio 2015\Projects\assignment\assignment.Data\bin\Debug\Autofac.dll
 c:\users\administrator\documents\visual studio 2015\Projects\assignment\assignment.Data\bin\Debug\Autofac.pdb
 c:\users\administrator\documents\visual studio 2015\Projects\assignment\assignment.Data\bin\Debug\Autofac.xml
+E:\assignment\assignment.Data\bin\Debug\assignment.Data.dll.config
+E:\assignment\assignment.Data\bin\Debug\assignment.Data.dll
+E:\assignment\assignment.Data\bin\Debug\assignment.Data.pdb
+E:\assignment\assignment.Data\bin\Debug\assignment.Model.dll
+E:\assignment\assignment.Data\bin\Debug\Autofac.dll
+E:\assignment\assignment.Data\bin\Debug\EntityFramework.dll
+E:\assignment\assignment.Data\bin\Debug\EntityFramework.SqlServer.dll
+E:\assignment\assignment.Data\bin\Debug\assignment.Model.pdb
+E:\assignment\assignment.Data\bin\Debug\assignment.Model.dll.config
+E:\assignment\assignment.Data\bin\Debug\Autofac.pdb
+E:\assignment\assignment.Data\bin\Debug\Autofac.xml
+E:\assignment\assignment.Data\bin\Debug\EntityFramework.xml
+E:\assignment\assignment.Data\bin\Debug\EntityFramework.SqlServer.xml
+E:\assignment\assignment.Data\obj\Debug\assignment.Data.csprojResolveAssemblyReference.cache
+E:\assignment\assignment.Data\obj\Debug\assignment.Data.csproj.CoreCompileInputs.cache
+E:\assignment\assignment.Data\obj\Debug\assignment.Data.dll
+E:\assignment\assignment.Data\obj\Debug\assignment.Data.pdb

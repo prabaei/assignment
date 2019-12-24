@@ -13,7 +13,7 @@ namespace assignment.Model.core.common
 
         IEnumerable<T> List();
 
-        T Insert(T data);
+        void Insert(T data);
         void Update(T data);
      
     }

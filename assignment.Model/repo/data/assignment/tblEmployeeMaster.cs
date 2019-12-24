@@ -35,6 +35,8 @@ namespace assignment.Model.repo.data.assignment
 
         public bool? active { get; set; }
 
+        public virtual tblempRole tblempRole { get; set; }
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<tblProject> tblProjects { get; set; }
 
