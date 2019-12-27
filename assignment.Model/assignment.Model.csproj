@@ -38,6 +38,9 @@
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -55,9 +58,12 @@
     <Compile Include="api\employeeRole.cs" />
     <Compile Include="api\Iemployeemaster.cs" />
     <Compile Include="api\IemployeeRole.cs" />
+    <Compile Include="api\ItblProject.cs" />
+    <Compile Include="api\tblproject.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="core\common\dbentity\ItblEmployeeMaster.cs" />
     <Compile Include="core\common\dbentity\ItblempRole.cs" />
+    <Compile Include="core\common\dbentity\ItblProject.cs" />
     <Compile Include="core\common\IcommonCRUD.cs" />
     <Compile Include="core\common\IdeleteintKey.cs" />
     <Compile Include="core\common\IResponseContextObject.cs" />
@@ -66,7 +72,6 @@
     <Compile Include="core\common\ILogger.cs" />
     <Compile Include="core\common\IresponseContext.cs" />
     <Compile Include="core\common\ResponseContextObject.cs" />
-    <Compile Include="core\common\ResponseObject.cs" />
     <Compile Include="core\database\IdbCore.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="repo\data\assignment\Idbcontext.cs" />

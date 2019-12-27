@@ -65,3 +65,5 @@ E:\assignment\assignment.Application\bin\Debug\System.Web.Razor.xml
 E:\assignment\assignment.Application\bin\Debug\System.Web.WebPages.xml
 E:\assignment\assignment.Application\bin\Debug\System.Web.WebPages.Deployment.xml
 E:\assignment\assignment.Application\bin\Debug\System.Web.WebPages.Razor.xml
+E:\assignment\assignment.Application\bin\Debug\Newtonsoft.Json.dll
+E:\assignment\assignment.Application\bin\Debug\Newtonsoft.Json.xml

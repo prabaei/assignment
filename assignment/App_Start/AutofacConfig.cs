@@ -44,6 +44,10 @@ namespace assignment.App_Start
             builder.RegisterType<Application.employeeRoleRepo>()
                    .As<Application.IemployeeRoleRepo>()
                    .InstancePerRequest();
+            builder.RegisterType<Application.projectRepo>()
+                   .As<Application.IprojectRepo>()
+                   .InstancePerRequest();
+            
             //builder.RegisterGeneric(typeof(GenericRepository<>))
             //       .As(typeof(IGenericRepository<>))
             //       .InstancePerRequest();

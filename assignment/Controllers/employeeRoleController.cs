@@ -20,61 +20,46 @@ namespace assignment.Controllers
         // GET: api/employeeRole
         public IHttpActionResult Get()
         {
-            
-            return Ok(_employeeRepo.get());
+
+            return Ok(_employeeRepo.List());
         }
 
         // GET: api/employeeRole/5
-        public HttpResponseMessage Get(int id)
+        public IHttpActionResult Get(int id)
         {
-            return Request.CreateResponse(HttpStatusCode.OK, _employeeRepo.getKeyRecord(id));
+            return Ok(_employeeRepo.getKeyRecord(id));
         }
 
         // POST: api/employeeRole
         public HttpResponseMessage Post([FromBody]assignment.Model.api.employeeRoles value)
-
-
         {
-
-            if (ModelState.IsValid)
-            {
-
-           
+            if (value == null)
+                return Request.CreateErrorResponse(HttpStatusCode.BadRequest, "value passed is not valid");
             _employeeRepo.Insert(value);
-            
-            Model.core.common.IResponseContextObject res = _employeeRepo.getResponseContext(); 
-            if (res.ErrorOccured)
-            {
-               return Request.CreateResponse(HttpStatusCode.InternalServerError, res.InternalServererror);
-            }
-            else
-            {
-                return Request.CreateResponse(HttpStatusCode.OK, res.responseBody);
-            }
-
-            }
-            return Request.CreateResponse(HttpStatusCode.BadRequest, ModelState.Values);
+            return _employeeRepo.GetResponseMessage();
         }
 
         // PUT: api/employeeRole/5
-        public void Put(int id, [FromBody]string value)
+        public HttpResponseMessage Put(int id, [FromBody]employeeRoles value)
         {
+            if (value == null)
+                return Request.CreateErrorResponse(HttpStatusCode.BadRequest, "value passed is not valid");
+            value.id = id;
+            _employeeRepo.Update(value);
+            return _employeeRepo.GetResponseMessage();
         }
 
         // DELETE: api/employeeRole/5
-        public HttpResponseMessage Delete(int id)
+        public HttpResponseMessage Delete(int id=0)
         {
             _employeeRepo.Delete(id);
 
-            Model.core.common.IResponseContextObject res = _employeeRepo.getResponseContext(); ;
-            if (res.ErrorOccured)
-            {
-                return Request.CreateResponse(HttpStatusCode.InternalServerError, res.InternalServererror);
-            }
-            else
-            {
-                return Request.CreateResponse(HttpStatusCode.OK, res.responseBody);
-            }
+            return _employeeRepo.GetResponseMessage();
         }
+        //[HttpGet]
+        //public IHttpActionResult List()
+        //{
+            
+        //}
     }
 }

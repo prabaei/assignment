@@ -20,7 +20,7 @@ namespace assignment.Controllers
         public IHttpActionResult  Get()
         {
             //return new Iemployeemaster[] { new employeemaster(){ name="chumma kizi"} };
-            return Ok(this._EmployeeRepo.get());
+            return Ok(this._EmployeeRepo.List());
         }
 
         // GET: api/Employee/5
@@ -30,21 +30,30 @@ namespace assignment.Controllers
         }
 
         // POST: api/Employee
-        public IHttpActionResult Post([FromBody]employeemaster value)
+        public HttpResponseMessage Post([FromBody]employeemaster value)
         {
+            if (value == null)
+                return Request.CreateErrorResponse(HttpStatusCode.BadRequest, "value passed is not valid");
             this._EmployeeRepo.Insert(value);
-            return Ok(value);
+            return _EmployeeRepo.GetResponseMessage();
 
         }
 
         // PUT: api/Employee/5
-        public void Put(int id, [FromBody]Iemployeemaster value)
+        public HttpResponseMessage Put(int id, [FromBody]employeemaster value)
         {
+            if (value == null)
+                return Request.CreateErrorResponse(HttpStatusCode.BadRequest, "value passed is not valid");
+            value.empId = id;
+            _EmployeeRepo.Update(value);
+            return _EmployeeRepo.GetResponseMessage();
         }
 
         // DELETE: api/Employee/5
-        public void Delete(int id)
+        public HttpResponseMessage Delete(int id)
         {
+            this._EmployeeRepo.Delete(id);
+            return _EmployeeRepo.GetResponseMessage();
         }
     }
 }

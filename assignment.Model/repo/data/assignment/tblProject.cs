@@ -1,5 +1,6 @@
 namespace assignment.Model.repo.data.assignment
 {
+    using global::assignment.Model.api;
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
@@ -7,7 +8,7 @@ namespace assignment.Model.repo.data.assignment
     using System.Data.Entity.Spatial;
 
     [Table("tblProject")]
-    public partial class tblProject
+    public partial class tblProject : ItblProject
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public tblProject()

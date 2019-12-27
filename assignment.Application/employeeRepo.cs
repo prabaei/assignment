@@ -7,6 +7,7 @@ using assignment.Model.repo.data.assignment;
 using assignment.Model.core.common;
 using assignment.Model.api;
 using System.Net.Http;
+using assignment.Application.common;
 
 namespace assignment.Application
 {
@@ -37,17 +38,22 @@ namespace assignment.Application
 
         public Iemployeemaster get()
         {
-            return _assignmentContext.tblEmployeeMasters.FirstOrDefault();
+            return _assignmentContext.tblEmployeeMasters.Select(m => new Model.api.employeemaster() { active = m.active, createdOn = m.createdOn, empId = m.empId, employeeRole = m.employeeRole, mobile = m.mobile, modifiedOn = m.modifiedOn, name = m.name }).FirstOrDefault();
         }
 
         public Iemployeemaster getKeyRecord(int key)
         {
-            return _assignmentContext.tblEmployeeMasters.Where(m => m.empId == key).FirstOrDefault();
+            return _assignmentContext.tblEmployeeMasters.Select(m => new Model.api.employeemaster() { active = m.active, createdOn = m.createdOn, empId = m.empId, employeeRole = m.employeeRole, mobile = m.mobile, modifiedOn = m.modifiedOn, name = m.name }).Where(m => m.empId == key).FirstOrDefault();
         }
 
         public override IResponseContextObject getResponseContext()
         {
             return  base.getResponseContext();
+        }
+
+        public HttpResponseMessage GetResponseMessage()
+        {
+            return base.GetResponseMes();
         }
 
         public void Insert(Iemployeemaster data)
@@ -71,7 +77,7 @@ namespace assignment.Application
         
         public IEnumerable<Iemployeemaster> List()
         {
-            return _assignmentContext.tblEmployeeMasters.ToList();
+            return _assignmentContext.tblEmployeeMasters.Select(m=>new Model.api.employeemaster() { active=m.active,createdOn=m.createdOn,empId=m.empId,employeeRole=m.employeeRole,mobile=m.mobile,modifiedOn=m.modifiedOn,name=m.name}).ToList();
         }
         public void Update(Iemployeemaster data)
         {
